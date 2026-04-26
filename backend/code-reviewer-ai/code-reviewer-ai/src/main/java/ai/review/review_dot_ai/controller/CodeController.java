@@ -38,16 +38,17 @@ public class CodeController {
 		return "Hello World...!Bye";
 	}
 	
-	// some
+	// api that store data into databases...
 	@PostMapping("/upload")
 	public ResponseEntity<CodeSubmission> uploadCode(@RequestBody CodeSubmission codeSubmission){
 		CodeSubmission submission = codeService.createSubmission(codeSubmission);
 		return ResponseEntity.status(HttpStatus.OK).body(submission);
 	}
 	
-	
+	// api 
 	@PostMapping("/analyze/{submissionId}")
 	public ResponseEntity<CodeVersion> analyzeCode(@PathVariable UUID submissionId) {
+		// fetch letested version...
 		Optional<CodeVersion> latest = versionService.getVersion(submissionId).stream()
 										.max(Comparator.comparingInt(CodeVersion::getVersionNo));
 		if(latest.isPresent()) {
@@ -67,6 +68,7 @@ public class CodeController {
         return ResponseEntity.ok(versionService.createNextVersion(submissionId, code));
     }
 	
+	// see all code submission...
 	@GetMapping("/submissions/{userId}")
     public ResponseEntity<List<CodeSubmission>> getUserSubmissions(@PathVariable UUID userId) {
         return ResponseEntity.ok(codeService.getUserSubmissions(userId));

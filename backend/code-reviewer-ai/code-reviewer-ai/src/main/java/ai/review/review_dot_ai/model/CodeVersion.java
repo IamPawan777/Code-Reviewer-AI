@@ -3,7 +3,6 @@ package ai.review.review_dot_ai.model;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import org.hibernate.annotations.ManyToAny;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -38,6 +37,7 @@ public class CodeVersion {
 	@Column(columnDefinition = "TEXT")
 	private String code;
 	
+	// AI response.....
 	@Column(columnDefinition = "TEXT")
 	private String analysis;
 	

@@ -1,5 +1,5 @@
 
-const API_BASE = 'http://localhost:8080/api/code';
+const API_BASE = 'http://localhost:9090/api/code';
 const USER_ID_KEY = 'ai_codereviewer_user_id';
 
 
@@ -222,6 +222,7 @@ async function loadComparisonPage() {
 
     if(!submissionId) return;
 
+    
     const res = await fetch(`${API_BASE}/version/${submissionId}`);
     if(res.ok) {
         const versions = await res.json();

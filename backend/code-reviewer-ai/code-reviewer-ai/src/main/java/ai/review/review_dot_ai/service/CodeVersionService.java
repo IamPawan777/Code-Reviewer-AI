@@ -31,15 +31,13 @@ public class CodeVersionService {
 	
 	public CodeVersion analyzeVersion(UUID versionId) {
 		CodeVersion version = codeVersionRepository.findById(versionId)
-				.orElseThrow(() -> new RuntimeException("version not found"));
+				.orElseThrow(() -> new RuntimeException("Version not found..."));
 		
-//		if(version.orElseThrow())
+		// Code goes into the gemini api... 
 		String analysis=aiService.analyzeCode(version.getCode());
 		version.setAnalysis(analysis);
-		return codeVersionRepository.save(version);
-		
+		return codeVersionRepository.save(version);		
 	}
-
 
 	 public List<CodeVersion> getVersions(UUID submissionId) {
 		 return codeVersionRepository.findBySubmissionId(submissionId);
@@ -47,8 +45,7 @@ public class CodeVersionService {
 
 	 
 	 
-	 public CodeVersion createNextVersion(UUID submissionId, String newCode) {
-		 
+	 public CodeVersion createNextVersion(UUID submissionId, String newCode) {		 
          CodeSubmission submission = codeSubmissionRepository.findById(submissionId)
                 .orElseThrow(() -> new RuntimeException("Submussion not found"));
 
@@ -67,6 +64,6 @@ public class CodeVersionService {
 	 
 	 public CodeVersion getVersionByVersionId(UUID versionId) {
         return codeVersionRepository.findById(versionId)
-                .orElseThrow(() -> new RuntimeException("version not found"));
+                .orElseThrow(() -> new RuntimeException("Version not found"));
      }
 }

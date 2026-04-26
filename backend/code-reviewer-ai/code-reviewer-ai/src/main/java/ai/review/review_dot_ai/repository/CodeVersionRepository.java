@@ -11,6 +11,7 @@ import ai.review.review_dot_ai.model.CodeVersion;
 
 @Repository
 public interface CodeVersionRepository extends JpaRepository<CodeVersion, UUID> {
+	
 	List<CodeVersion> findBySubmissionId(UUID submissionId);
 
 	Optional<CodeVersion> findTopBySubmissionIdOrderByVersionNoDesc(UUID submissionId);
