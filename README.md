@@ -42,14 +42,40 @@ Built a GenAI-powered full-stack code review platform 🤖 that allows users to 
 
 
 
+## 👀 Screenshots:
 
-
-## 👀 Screenshots
-
-***Description of the project:***
+**Front Page**
+***Drag code files:***
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/27573c54-cd4e-478e-801f-46f5d4430a93" width="600" height="700">
+   <img width="720" height="400" alt="Image" src="https://github.com/user-attachments/assets/94535eb4-0ea5-40da-afe8-10a39fc28167" />
 </p>
+
+***Copy-paste code:***
+<p align="center">
+  <img width="720" height="400" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/8afbc326-88aa-4cb6-8c52-dbc09dc47a55" />
+</p>
+
+***AI-generated code:***
+<p align="center">
+  <img width="720" height="400" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/9b726841-4b2c-47bf-aba3-4655038bf95b" />
+</p>
+
+***Original code:***
+<p align="center">
+  <img width="720" height="400" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/0992e0c9-61d8-4388-b42e-eb1cae3067ea" />
+</p>
+
+***All code submissions:***
+<p align="center">
+  <img width="720" height="400" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/c8ecf043-6a43-497e-8c10-56af7dfb4593" />
+</p>
+
+***Code comparison:***
+<p align="center">
+  <img width="720" height="400" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/78e9cc2d-143b-4629-b3e2-c38c0da66df0" />
+</p>
+
+
 
 
 
