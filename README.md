@@ -58,6 +58,8 @@ Built a GenAI-powered full-stack code review platform 🤖 that allows users to 
 ***AI-generated code:***
 <p align="center">
   <img width="720" height="400" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/9b726841-4b2c-47bf-aba3-4655038bf95b" />
+  <br>
+  <img width="720" height="400" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/8975ca95-4e1f-42ed-b3d2-10f0e4169987" />
 </p>
 
 ***Original code:***
