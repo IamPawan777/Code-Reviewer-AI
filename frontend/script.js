@@ -64,7 +64,7 @@ async function submitCode() {
             await fetch(`${API_BASE}/analyze/${submission.id}`, {
                 method: 'POST'
             });
-            window.location.href = `review.html?id=${submission.id}`;              // new page
+            window.location.href = `review.html?id=${submission.id}`;              // new page refresh
 
             // do something
         } else {

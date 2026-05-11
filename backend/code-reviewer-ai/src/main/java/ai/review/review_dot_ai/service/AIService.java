@@ -22,8 +22,7 @@ public class AIService {
 	
 	private final RestTemplate restTemplate = new RestTemplate();
 	
-	private static final String GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent"; 
-//	private static final String GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent";
+	private static final String GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent";
 
 	
 	// AI service to fix code...
@@ -52,12 +51,13 @@ public class AIService {
 //				+ "2. IMPROVEMENTS:\r\n"
 //				+ "- List concise improvements (max 5 points, no explanation)\r\n"
 //				+ "\r\n"
-				+ "OPTIMIZED CODE:\r\n"
-				+ "- Provide 1 or 2 improved versions of the code\r\n"
-				+ "- If generate more than 1 improved versions of the code write at the top with version serialwise "
+				+ "FIXED ERROR:\r\n"
+				+ "- If there is any bug fix the bug in the code, and comment only on that line where error present and write after 10 space 'Problem...' with serial no\r\n"
+				+ "- Provide 2 improved versions of the code first is fixed the error and second is more optimized or Other way to write code,  \r\n"
+				+ "- If generate optimized versions of the code, write at the top 'OPTIMIZED VERSION:' "
 				+ "- Keep the same language as input\r\n"
 				+ "- Use clean, production-quality code\r\n"
-				+ "- Do NOT include comments inside the code\r\n"
+				+ "- Do NOT include comments inside the code except for error code in first version\r\n"
 				+ "\r\n"
 				+ "TIME COMPLEXITY:\r\n"
 				+ "- Original: O(?)\r\n"

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ai.review</groupId>
-	<artifactId>review-dot-ai</artifactId>
+	<artifactId>code-reviewer-ai</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
