@@ -47,8 +47,9 @@ Built a GenAI-powered full-stack code review platform 🤖 that allows users to 
 ## 👀 Screenshots
 
 ***Description of the project:***
-
-![App Screenshot](https://github.com/user-attachments/assets/fe5bedab-1171-4c1a-a455-5e825889bb3a)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/27573c54-cd4e-478e-801f-46f5d4430a93" width="600" height="700">
+</p>
 
 
 
